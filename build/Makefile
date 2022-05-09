@@ -9,6 +9,6 @@ down:
 up:
 	docker compose -f ${COMPOSE_FILE} up -d
 exec:
-	docker compose -f ${COMPOSE_FILE} exec api /bin/sh
+	docker compose -f ${COMPOSE_FILE} exec routeros /bin/sh
 build:
 	docker compose -f ${COMPOSE_FILE} build --no-cache
