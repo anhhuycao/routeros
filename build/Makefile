@@ -11,4 +11,4 @@ up:
 exec:
 	docker compose -f ${COMPOSE_FILE} exec routeros /bin/sh
 build:
-	docker compose -f ${COMPOSE_FILE} build --no-cache --progress
+	docker compose -f ${COMPOSE_FILE} build --no-cache

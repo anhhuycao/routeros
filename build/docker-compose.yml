@@ -1,12 +1,12 @@
 version: '3.8'
 
 services:
-  mikrotik:
+  routeros:
     build:
       context: ./
       dockerfile: Dockerfile
-    image: mikrotik
-    container_name: mikrotik
+    image: routeros
+    container_name: routeros
     restart: always
     cap_add:
       - NET_ADMIN
