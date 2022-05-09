@@ -10,3 +10,5 @@ up:
 	docker compose -f ${COMPOSE_FILE} up -d
 exec:
 	docker compose -f ${COMPOSE_FILE} exec api /bin/sh
+build:
+	docker compose -f ${COMPOSE_FILE} build --no-cache
