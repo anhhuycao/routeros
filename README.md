@@ -30,10 +30,9 @@ docker run -d -p 2222:22 -p 8728:8728 -p 8729:8729 -p 5900:5900 -ti evilfreelanc
 Example is [here](docker-compose.yml).
 
 ```yml
-version: "3"
+version: '3'
 
 services:
-
   routeros-6-42:
     image: evilfreelancer/docker-routeros:6.42.12
     restart: unless-stopped
@@ -42,10 +41,10 @@ services:
     devices:
       - /dev/net/tun
     ports:
-      - "12222:22"
-      - "12223:23"
-      - "18728:8728"
-      - "18729:8729"
+      - '12222:22'
+      - '12223:23'
+      - '18728:8728'
+      - '18729:8729'
 
   routeros-6-44:
     image: evilfreelancer/docker-routeros:6.46.5
@@ -55,11 +54,10 @@ services:
     devices:
       - /dev/net/tun
     ports:
-      - "22222:22"
-      - "22223:23"
-      - "28728:8728"
-      - "28729:8729"
-
+      - '22222:22'
+      - '22223:23'
+      - '28728:8728'
+      - '28729:8729'
 ```
 
 ### Build from sources
@@ -78,15 +76,15 @@ Now you can connect to your RouterOS container via VNC protocol
 
 ## List of exposed ports
 
-| Description | Ports |
-|-------------|-------|
+| Description | Ports                                 |
+| ----------- | ------------------------------------- |
 | Defaults    | 21, 22, 23, 80, 443, 8291, 8728, 8729 |
-| IPSec       | 50, 51, 500/udp, 4500/udp |
-| OpenVPN     | 1194/tcp, 1194/udp |
-| L2TP        | 1701 |
-| PPTP        | 1723 |
+| IPSec       | 50, 51, 500/udp, 4500/udp             |
+| OpenVPN     | 1194/tcp, 1194/udp                    |
+| L2TP        | 1701                                  |
+| PPTP        | 1723                                  |
 
 ## Links
 
-* https://github.com/joshkunz/qemu-docker
-* https://github.com/ennweb/docker-kvm
+- https://github.com/joshkunz/qemu-docker
+- https://github.com/ennweb/docker-kvm
