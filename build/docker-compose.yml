@@ -5,6 +5,7 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
+    image: mikrotik
     container_name: mikrotik
     restart: always
     cap_add:
